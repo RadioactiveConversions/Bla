@@ -1,0 +1,10 @@
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.csprojResolveAssemblyReference.cache
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.Properties.Resources.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.csproj.GenerateResource.Cache
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\bin\Debug\Metro2033Server.exe.config
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\bin\Debug\Metro2033Server.exe
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\bin\Debug\Metro2033Server.pdb
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.AboutBox1.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.Form1.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.exe
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Server\obj\Debug\Metro2033Server.pdb

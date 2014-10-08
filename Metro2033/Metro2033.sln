@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro2033", "Metro2033\Metro2033.csproj", "{343A00E6-263E-4772-882A-E550383231E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro2033Server", "Metro2033Server\Metro2033Server.csproj", "{0874287F-D3BE-481B-A42E-BA72518826CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro2033Client", "Metro2033Client\Metro2033Client.csproj", "{5C1198D6-C60B-48E8-BABE-8F35AE74D584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{343A00E6-263E-4772-882A-E550383231E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343A00E6-263E-4772-882A-E550383231E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343A00E6-263E-4772-882A-E550383231E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343A00E6-263E-4772-882A-E550383231E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0874287F-D3BE-481B-A42E-BA72518826CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0874287F-D3BE-481B-A42E-BA72518826CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0874287F-D3BE-481B-A42E-BA72518826CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0874287F-D3BE-481B-A42E-BA72518826CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1198D6-C60B-48E8-BABE-8F35AE74D584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1198D6-C60B-48E8-BABE-8F35AE74D584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1198D6-C60B-48E8-BABE-8F35AE74D584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1198D6-C60B-48E8-BABE-8F35AE74D584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

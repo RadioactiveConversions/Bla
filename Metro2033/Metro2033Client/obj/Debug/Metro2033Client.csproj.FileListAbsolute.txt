@@ -1,0 +1,10 @@
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\bin\Debug\Metro2033Client.exe.config
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\bin\Debug\Metro2033Client.exe
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\bin\Debug\Metro2033Client.pdb
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.AboutBox1.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.Form1.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.Properties.Resources.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.csproj.GenerateResource.Cache
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.exe
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.pdb
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033Client\obj\Debug\Metro2033Client.csprojResolveAssemblyReference.cache
