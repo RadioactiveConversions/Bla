@@ -1,0 +1,13 @@
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\bin\Debug\Metro2033WpfClient.exe.config
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\bin\Debug\Metro2033WpfClient.exe
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\bin\Debug\Metro2033WpfClient.pdb
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.csprojResolveAssemblyReference.cache
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\MainWindow.baml
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\MainWindow.g.cs
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\App.g.cs
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient_MarkupCompile.cache
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.g.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.Properties.Resources.resources
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.csproj.GenerateResource.Cache
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.exe
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.pdb
