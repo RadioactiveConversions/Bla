@@ -43,35 +43,42 @@ namespace Metro2033
             }
         }
 
+        //Methode würfelt "value" d6 würfel und speichert sie im "dicethrow" Array. Die davon gelungenen Würfel werden in "success" und gepatze Würfel in "slip" gepeichert.
         public void ThrowDice(uint value)
         {
-            dicethrow = new uint[value];
+            this.dicethrow = new uint[value];
             this.success = 0;
             this.slip = 0;
             for (uint i = 0; i < value; i++)
             {
-                dicethrow[i] = (uint)(random.Next(1, 7));
-                if (dicethrow[i] > 4)
-                    success++;
-                if (dicethrow[i] < 2)
-                    slip++;
+                this.dicethrow[i] = (uint)(random.Next(1, 7));
+                if (this.dicethrow[i] > 4)
+                    this.success++;
+                if (this.dicethrow[i] < 2)
+                    this.slip++;
             }
         }
 
         override public string ToString()
         {
             string local = "";
-            for (int i = 0; i < dicethrow.Length; i++)
+            for (int i = 0; i < this.dicethrow.Length; i++)
             {
-                if (i != dicethrow.Length - 1)
-                    local += dicethrow[i] + ",";
+                if (i != this.dicethrow.Length - 1)
+                    local += this.dicethrow[i] + ",";
                 else
-                    local += dicethrow[i] + " -> ";
+                    local += this.dicethrow[i] + " -> ";
             }
-            if (success == 1)
-                local += success + " Erfolg";
+            if (this.success == 1)
+                local += this.success + " Erfolg!";
             else
-                local += success + " Erfolge";
+                local += this.success + " Erfolge!";
+
+            if (this.slip >= (this.dicethrow.Length / 2))
+                if (this.success == 0)
+                    local += " KRITISCHER Patzer!";
+                else
+                    local += " Patzer!";
 
             return local;
 
