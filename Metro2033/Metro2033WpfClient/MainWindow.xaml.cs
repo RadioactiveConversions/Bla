@@ -20,6 +20,7 @@ namespace Metro2033WpfClient
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,14 +31,53 @@ namespace Metro2033WpfClient
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SendMessage(object sender, RoutedEventArgs e)
         {
             if (textchat.Text != "")
             {
                 textlog.AppendText((textchat.Text + System.Environment.NewLine));
+                textlog.ScrollToEnd();
                 textchat.Text = "";
             }
             textchat.Focus();
+        }
+
+        private void GetInfo(object sender, RoutedEventArgs e)
+        {
+            Info info = new Info();
+            info.Owner = this;
+            info.ShowDialog();
+        }
+
+        private void GetWuerfelDialog(object sender, RoutedEventArgs e)
+        {
+            WuerfelDialog dialog = new WuerfelDialog();
+            dialog.Owner = this;
+            dialog.ShowDialog();
+        }
+
+        private void GetConnectDialog(object sender, RoutedEventArgs e)
+        {
+            ConnectDialog dialog = new ConnectDialog();
+            dialog.Owner = this;
+            dialog.ShowDialog();
+            if (dialog.DialogResult.HasValue && dialog.DialogResult.Value)
+            {
+                status.Content = "Verbinde...";
+                try
+                {
+                    status.Content = "Verbindung aufgebaut";
+
+                }
+                catch
+                {
+
+                }
+
+                MessageBox.Show("User clicked OK");
+            }
+
+            dialog.Close();
         }
 
     }

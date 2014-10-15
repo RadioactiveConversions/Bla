@@ -18,7 +18,7 @@ namespace Metro2033
             ShadowrunDice a = new ShadowrunDice();
             for (int i = 0; i < 20; i++)
             {
-                a.ThrowDice(5);
+                a.ThrowDice(255);
                 Console.WriteLine(a);
             }
             Application.EnableVisualStyles();

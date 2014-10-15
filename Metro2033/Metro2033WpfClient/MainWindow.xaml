@@ -5,27 +5,27 @@
         Title="Metro 2033 RPG Client" d:DesignWidth="892" d:DesignHeight="589" Width="830" Height="560">
     <Grid>
         <StatusBar Margin="0,480,0,0" VerticalAlignment="Bottom" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <StatusBarItem Content="StatusBarItem" Height="25" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True"/>
+            <StatusBarItem x:Name="status" Content="Keine Verbindung" Height="25" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True"/>
         </StatusBar>
         <Menu VerticalAlignment="Top" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <MenuItem Header="Datei" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
-                <MenuItem Header="Verbindung Aufbauen" HorizontalAlignment="Left" Width="210"/>
-                <MenuItem Header="Verbindung Trennen" HorizontalAlignment="Left" Width="210"/>
+                <MenuItem Header="Verbindung aufbauen" HorizontalAlignment="Left" Width="210" Click="GetConnectDialog"/>
+                <MenuItem Header="Verbindung trennen" HorizontalAlignment="Left" Width="210"/>
                 <Separator HorizontalAlignment="Left" Width="145"/>
                 <MenuItem Header="Beenden" HorizontalAlignment="Left" Width="210" Click="CloseApplication"/>
             </MenuItem>
-            <MenuItem Header="Bearbeiten"/>
+            <MenuItem Header="Bearbeiten" IsEnabled="False"/>
             <MenuItem Header="Info">
-                <MenuItem Header="Info"/>
+                <MenuItem Header="Info" Click="GetInfo"/>
             </MenuItem>
         </Menu>
         <TabControl Margin="10,26,10,30" ScrollViewer.CanContentScroll="True" VerticalContentAlignment="Bottom">
             <TabItem Header="Chat">
                 <Grid Background="#FFE5E5E5">
-                    <TextBox x:Name="textlog" Margin="10,10,170,38" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Focusable="False"/>
+                    <TextBox x:Name="textlog" Margin="10,10,170,38" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
                     <TextBox x:Name="textchat" Height="23" Margin="10,0,170,10" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
-                    <Button Content="Senden" HorizontalAlignment="Right" Margin="0,0,90,11" VerticalAlignment="Bottom" Width="75" Click="Button_Click"/>
-                    <Button Content="Würfeln" HorizontalAlignment="Right" Margin="0,0,10,11" VerticalAlignment="Bottom" Width="75"/>
+                    <Button Content="Senden" HorizontalAlignment="Right" Margin="0,0,90,11" VerticalAlignment="Bottom" Width="75" Click="SendMessage" IsDefault="True"/>
+                    <Button Content="Würfeln" HorizontalAlignment="Right" Margin="0,0,10,11" VerticalAlignment="Bottom" Width="75" Click="GetWuerfelDialog"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Charakter">

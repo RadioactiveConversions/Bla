@@ -8,7 +8,7 @@ using System.Windows;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
 [assembly: AssemblyTitle("Metro2033WpfClient")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Rollenspielassistenzprogramm programmiert von fuchsgesicht und A-Jay.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Metro2033WpfClient")]

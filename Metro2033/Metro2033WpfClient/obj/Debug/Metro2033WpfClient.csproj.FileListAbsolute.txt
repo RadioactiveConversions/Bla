@@ -11,3 +11,9 @@ C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient
 C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.csproj.GenerateResource.Cache
 C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.exe
 C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Metro2033WpfClient.pdb
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Info.baml
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\Info.g.cs
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\WuerfelDialog.baml
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\WuerfelDialog.g.cs
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\ConnectDialog.baml
+C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\obj\Debug\ConnectDialog.g.cs
