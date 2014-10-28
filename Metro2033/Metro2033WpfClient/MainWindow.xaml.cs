@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net.Sockets;
+using System.Net;
+using System.IO;
+using System.Threading;
 
 namespace Metro2033WpfClient
 {
@@ -20,10 +24,23 @@ namespace Metro2033WpfClient
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Thread netWatcher;
+
+        private TcpClient clientSocket;
+
+        private StreamReader reader;
+
+        private StreamWriter writer;
 
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            reader.Close();
+            base.OnClosed(e);
         }
 
         private void CloseApplication(object sender, RoutedEventArgs e)
@@ -35,8 +52,8 @@ namespace Metro2033WpfClient
         {
             if (textchat.Text != "")
             {
-                textlog.AppendText((textchat.Text + System.Environment.NewLine));
-                textlog.ScrollToEnd();
+                writer.WriteLine(textchat.Text);
+                writer.Flush();
                 textchat.Text = "";
             }
             textchat.Focus();
@@ -66,18 +83,56 @@ namespace Metro2033WpfClient
                 status.Content = "Verbinde...";
                 try
                 {
-                    status.Content = "Verbindung aufgebaut";
+                    clientSocket = new TcpClient(dialog.GetHost, int.Parse(dialog.GetPort));
 
+                    reader = new StreamReader(clientSocket.GetStream());
+                    writer = new StreamWriter(clientSocket.GetStream());
+
+                    //Thread.Sleep(1);
+
+                    menuDisconnect.IsEnabled = true;
+                    status.Content = "Verbindung aufgebaut";
+                    netWatcher = new Thread(StreamListening);
+                    netWatcher.Start();
                 }
                 catch
                 {
-
+                    status.Content = "Verbindung fehlgeschlagen";
                 }
-
-                MessageBox.Show("User clicked OK");
             }
 
             dialog.Close();
+        }
+
+        private void CloseConnection(object sender, RoutedEventArgs e)
+        {
+            clientSocket.Close();
+            menuDisconnect.IsEnabled = false;
+            status.Content = "Verbindung getrennt";
+        }
+
+        private void AddChat(string text)
+        {
+            Dispatcher.Invoke(new Action(() => { textlog.AppendText(text + System.Environment.NewLine); textlog.ScrollToEnd(); }));
+        }
+
+        private void StreamListening()
+        {
+            string income;
+            while (true)
+            {
+                try
+                {
+                    if ((income = reader.ReadLine()) != null)
+                    {
+                        AddChat(income);
+                    }
+                }
+                catch
+                {
+                    break;
+                }
+            }
         }
 
     }

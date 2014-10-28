@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Deus\Documents\Visual Studio 2013\Projects\Metro2033\Metro2033WpfClient\App.xaml
-4-1275624233
+5-775646410
 
-8-1775669172
+9-1861643076
 16821609161
-ConnectDialog.xaml;Info.xaml;MainWindow.xaml;WuerfelDialog.xaml;
+ChooseCharDialog.xaml;ConnectDialog.xaml;Info.xaml;MainWindow.xaml;WuerfelDialog.xaml;
 
 False
 

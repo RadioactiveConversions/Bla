@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro2033Client", "Metro203
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro2033WpfClient", "Metro2033WpfClient\Metro2033WpfClient.csproj", "{51E24CF6-7D2D-4B96-AA30-A5E5F8CB51FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metro2033WpfServer", "Metro2033WpfServer\Metro2033WpfServer.csproj", "{63C92675-2159-4898-90F6-52DBF4A7276A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{51E24CF6-7D2D-4B96-AA30-A5E5F8CB51FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51E24CF6-7D2D-4B96-AA30-A5E5F8CB51FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51E24CF6-7D2D-4B96-AA30-A5E5F8CB51FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C92675-2159-4898-90F6-52DBF4A7276A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C92675-2159-4898-90F6-52DBF4A7276A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C92675-2159-4898-90F6-52DBF4A7276A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C92675-2159-4898-90F6-52DBF4A7276A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

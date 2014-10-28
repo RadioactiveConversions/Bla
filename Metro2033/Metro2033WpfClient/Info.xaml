@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Metro2033WpfClient.Info"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Info" Height="320" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+        Title="Info" Height="320" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" WindowStyle="ToolWindow">
     <Grid>
         <Image Height="272" Margin="10,10,0,0" Width="130" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Produktname" Margin="145,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left"/>

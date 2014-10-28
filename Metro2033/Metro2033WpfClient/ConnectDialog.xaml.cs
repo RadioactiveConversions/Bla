@@ -22,8 +22,8 @@ namespace Metro2033WpfClient
         public ConnectDialog()
         {
             InitializeComponent();
-            txtip.SelectAll();
-            txtip.Focus();
+            txthost.SelectAll();
+            txthost.Focus();
         }
 
         private void Connect(object sender, RoutedEventArgs e)
@@ -32,15 +32,15 @@ namespace Metro2033WpfClient
             this.Hide();
         }
 
-        public string Ip
+        public string GetHost
         {
             get
             {
-                return this.txtip.Text;
+                return this.txthost.Text;
             }
         }
 
-        public string Port
+        public string GetPort
         {
             get
             {

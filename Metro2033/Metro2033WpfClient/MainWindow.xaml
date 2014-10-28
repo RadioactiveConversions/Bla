@@ -9,12 +9,14 @@
         </StatusBar>
         <Menu VerticalAlignment="Top" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <MenuItem Header="Datei" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
-                <MenuItem Header="Verbindung aufbauen" HorizontalAlignment="Left" Width="210" Click="GetConnectDialog"/>
-                <MenuItem Header="Verbindung trennen" HorizontalAlignment="Left" Width="210"/>
-                <Separator HorizontalAlignment="Left" Width="145"/>
-                <MenuItem Header="Beenden" HorizontalAlignment="Left" Width="210" Click="CloseApplication"/>
+                <MenuItem x:Name="menuConnect" Header="Verbindung aufbauen" Click="GetConnectDialog"/>
+                <MenuItem x:Name="menuDisconnect" Header="Verbindung trennen" Click="CloseConnection" IsEnabled="False"/>
+                <Separator/>
+                <MenuItem Header="Beenden" Click="CloseApplication"/>
             </MenuItem>
-            <MenuItem Header="Bearbeiten" IsEnabled="False"/>
+            <MenuItem Header="Bearbeiten">
+                <MenuItem Header="Charakter wechseln"/>
+            </MenuItem>
             <MenuItem Header="Info">
                 <MenuItem Header="Info" Click="GetInfo"/>
             </MenuItem>
@@ -54,8 +56,8 @@
                     <ComboBox HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="275"/>
                     <ListBox HorizontalAlignment="Right" Margin="0,37,10,10" Width="275" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
                     <Grid Height="422" Margin="290,10" Width="212" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <ComboBox Margin="46,182,46,218" Width="120" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <Button Content="Tauschen" HorizontalAlignment="Center" Margin="68,235,68,165" VerticalAlignment="Center" Width="76"/>
+                        <ComboBox Margin="0" Width="120" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button Content="Tauschen" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Center" Width="76"/>
                     </Grid>
                 </Grid>
             </TabItem>

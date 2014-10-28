@@ -43,7 +43,10 @@ namespace Metro2033
             }
         }
 
-        //Methode würfelt "value" d6 würfel und speichert sie im "dicethrow" Array. Die davon gelungenen Würfel werden in "success" und gepatze Würfel in "slip" gepeichert.
+        /// <summary>
+        /// Methode würfelt "value" d6 würfel und speichert sie im "dicethrow" Array. Die davon gelungenen Würfel werden in "success" und gepatze Würfel in "slip" gepeichert.
+        /// </summary>
+        /// <param name="value"> ist die anzahl der geworfenen würfel</param>
         public void ThrowDice(uint value)
         {
             this.dicethrow = new uint[value];
