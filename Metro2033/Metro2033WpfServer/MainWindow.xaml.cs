@@ -217,7 +217,7 @@ namespace Metro2033WpfServer
         private void ListenForClients()
         {
             Console.WriteLine(DateTime.Now.ToString() + " Serverthread gestartet!");
-            listener = new TcpListener(IPAddress.Parse("127.0.0.1"), 1337);
+            listener = new TcpListener(1337);
             listener.Start();
             Console.WriteLine("Warte auf Verbindungen...\n");
             while (true)
